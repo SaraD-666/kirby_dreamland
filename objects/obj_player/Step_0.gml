@@ -135,7 +135,7 @@ switch(gamestate){
 			sprite_index = spr_kirby_inflate;
 			image_xscale = _dir;
 		}
-		if (image_index >= image_number){
+		if (image_index >= image_number - 1){
 			prefly = false;
 			gamestate = GameState.Fly;
 		}
@@ -196,7 +196,7 @@ switch(gamestate){
 			sprite_index = spr_kirby_deflate;
 			image_xscale = _dir;
 		}
-		if (image_index >= image_number){
+		if (image_index >= image_number - 1){
 			sprite_index = spr_kirby_idle;
 			image_xscale = _dir;
 			is_drop = false;
